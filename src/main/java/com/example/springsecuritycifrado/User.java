@@ -3,7 +3,7 @@ package com.example.springsecuritycifrado;
 import jakarta.persistence.*;
 
 @Entity
-//@Table(name = "ob_user")
+@Table(name = "ob_user")
 public class User {
 
     @Id
