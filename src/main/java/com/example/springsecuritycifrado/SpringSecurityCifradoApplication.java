@@ -13,6 +13,9 @@ public class SpringSecurityCifradoApplication {
 
 		UserRepository repository =	context.getBean(UserRepository.class); // instancia del repositorio
 
+		User user = new User(null, "usuario", "admin");
+		repository.save(user);
+
 	}
 
 }
