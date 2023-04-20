@@ -124,7 +124,7 @@ Es un framework de autorización, abierto y está construido estandares IETF y l
 
 Es un protocolo de delegación:
 * Permite que alguien que controla un recurso permita a una palicación de software acceder a ese recurso en su propio nombre sin pasar por ellos.
-
+* Con la ayuda de OAuth los usuarios pueden autorizar a third part applications a acceder a sus datos o ejecutar determinadas operaciones sin necesidad de proporcionar usuario y contraseña.
 
 ### Flujo de trabajo con OAuth:
 
@@ -139,5 +139,15 @@ Es un protocolo de delegación:
 ### Escenarios para implementar OAuth
 
 1. Autenticación HTTP en la que no se requiere utilizar usuario y contraseña todo el tiempo.
-2. 
+2. Múltiples aplicaciones dentro de una misma empresa y en consecuencia multiples cuentas con el mismo usuario y contraseña.
+3. Arquitecturas de microservicios.
+4. Interacción de aplicaciones de terceros.
+
+### Proveedores
+
+1. Google
+2. Github
+3. Facebook
+4. Okta
+5. 
 
