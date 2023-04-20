@@ -167,6 +167,8 @@ Authorization server
 
 keycloak: https: //www.keycloak.org/
 
+Ver ejemplos de aplicaciones: **https://github.com/spring-projects/spring-authorization-server**
+
 ### Flujos de acción OAuth:
 
 * Authorization code.
