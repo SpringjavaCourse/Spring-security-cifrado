@@ -115,3 +115,29 @@ Crear proyecto con las siguientes dependencias:
     <version>0.9.1</version>
 </dependency>        
 ```
+
+****
+
+## Open Authorization (OAuth)
+
+Es un framework de autorización, abierto y está construido estandares IETF y licenciado bajo Open Web Foundation.
+
+Es un protocolo de delegación:
+* Permite que alguien que controla un recurso permita a una palicación de software acceder a ese recurso en su propio nombre sin pasar por ellos.
+
+
+### Flujo de trabajo con OAuth:
+
+1. Una aplicación solicitada autenticación.
+2. Se realiza login mediante Google
+3. La aplicación se comunica con Google donde se utiliza las credenciales de Googlesin que la aplicación pueda verlos.
+4. El servidor de Google pregunta al usuario si desea conceder X permisos.
+5. El uduario acepta los permisos.
+6. Google genera un token de acceso como respuesta.
+7. La aplicación utiliza ese token.
+
+### Escenarios para implementar OAuth
+
+1. Autenticación HTTP en la que no se requiere utilizar usuario y contraseña todo el tiempo.
+2. 
+
