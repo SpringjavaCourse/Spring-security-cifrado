@@ -151,3 +151,32 @@ Es un protocolo de delegación:
 4. Okta
 5. 
 
+### OAuth en Spring Security
+
+Inicialmente habia un proyecto llamado OAuth.
+
+En el 2018 se sobreescribe para hacerlo más eficiente, con un codigo base mas sencillo.
+
+Se depreca el antiguo y ahora OAuth está integrado sobre el propio Spring Security.
+
+Incluye:
+
+* Client Support
+* Resource server
+Authorization server
+
+keycloak: https: //www.keycloak.org/
+
+### Flujos de acción OAuth:
+
+* Authorization code.
+* Implicit.
+* Resource Owner password credentials
+* Client Credentials
+* Refres Token
+
+### OpenID Connect
+
+* OpenID Connect ---> Authentication
+* OAuth 2.0 ---> Authorization
+* HTTP
