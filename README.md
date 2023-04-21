@@ -115,3 +115,70 @@ Crear proyecto con las siguientes dependencias:
     <version>0.9.1</version>
 </dependency>        
 ```
+
+****
+
+## Open Authorization (OAuth)
+
+Es un framework de autorización, abierto y está construido estandares IETF y licenciado bajo Open Web Foundation.
+
+Es un protocolo de delegación:
+* Permite que alguien que controla un recurso permita a una palicación de software acceder a ese recurso en su propio nombre sin pasar por ellos.
+* Con la ayuda de OAuth los usuarios pueden autorizar a third part applications a acceder a sus datos o ejecutar determinadas operaciones sin necesidad de proporcionar usuario y contraseña.
+
+### Flujo de trabajo con OAuth:
+
+1. Una aplicación solicitada autenticación.
+2. Se realiza login mediante Google
+3. La aplicación se comunica con Google donde se utiliza las credenciales de Googlesin que la aplicación pueda verlos.
+4. El servidor de Google pregunta al usuario si desea conceder X permisos.
+5. El uduario acepta los permisos.
+6. Google genera un token de acceso como respuesta.
+7. La aplicación utiliza ese token.
+
+### Escenarios para implementar OAuth
+
+1. Autenticación HTTP en la que no se requiere utilizar usuario y contraseña todo el tiempo.
+2. Múltiples aplicaciones dentro de una misma empresa y en consecuencia multiples cuentas con el mismo usuario y contraseña.
+3. Arquitecturas de microservicios.
+4. Interacción de aplicaciones de terceros.
+
+### Proveedores
+
+1. Google
+2. Github
+3. Facebook
+4. Okta
+5. 
+
+### OAuth en Spring Security
+
+Inicialmente habia un proyecto llamado OAuth.
+
+En el 2018 se sobreescribe para hacerlo más eficiente, con un codigo base mas sencillo.
+
+Se depreca el antiguo y ahora OAuth está integrado sobre el propio Spring Security.
+
+Incluye:
+
+* Client Support
+* Resource server
+Authorization server
+
+keycloak: https: //www.keycloak.org/
+
+Ver ejemplos de aplicaciones: **https://github.com/spring-projects/spring-authorization-server**
+
+### Flujos de acción OAuth:
+
+* Authorization code.
+* Implicit.
+* Resource Owner password credentials
+* Client Credentials
+* Refres Token
+
+### OpenID Connect
+
+* OpenID Connect ---> Authentication
+* OAuth 2.0 ---> Authorization
+* HTTP
